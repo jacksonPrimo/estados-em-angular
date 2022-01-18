@@ -1,0 +1,6 @@
+<form (submit)="signup()">
+  <input type="text" [(ngModel)]="userForm.name" name="name" placeholder="name">
+  <input type="text" [(ngModel)]="userForm.email" name="email" placeholder="email">
+  <input type="text" [(ngModel)]="userForm.password" name="password" placeholder="password">
+  <button type="submit">cadastrar</button>
+</form>

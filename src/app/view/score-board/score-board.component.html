@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <th>Todos</th>
+    <th>Locais</th>
+  </thead>
+  <tbody *ngIf="score$ | async as score">
+    <tr>
+      <td>{{score.aways}}</td>
+      <td>{{score.home}}</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="awayScore()">Adicionar a score a todos</button>
+<button (click)="homeScore()">Adicionar a score aos locais</button>
+<button (click)="resetScore()">Resetar</button>
+<button (click)="setScore()">Editar</button>
